@@ -1,0 +1,303 @@
+:root {
+    --light-theme-background: #f8f8ff;
+    --light-theme-textcolor: #212121;
+    
+    --dark-theme-background: #212121;
+    --dark-theme-textcolor: #f8f8ff;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.light-theme {
+    background-color: var(--light-theme-background);
+    color: var(--light-theme-textcolor);
+}
+
+.dark-theme {
+    background-color: var(--dark-theme-background);
+    color: var(--dark-theme-textcolor);
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-family: "Satoshi", sans-serif;
+    font-size: 2rem;
+    color: var(--light-theme-textcolor);
+}
+
+body {
+    margin: 0px 64px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header nav {
+    display: flex;
+    gap: 16px;
+
+}
+
+.header-links {
+    color: var(--light-theme-textcolor);
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 2px;
+    font-weight: 500;
+    font-family: "ranade", sans-serif;
+}
+
+.bottom-hover-effect::before {
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left bottom;
+    transition: 0.25s ease-in-out;
+    position: absolute;
+    height: 1px;
+    background-color: #212121;
+}
+
+.bottom-hover-effect:hover::before {
+    transform: scaleX(1);
+    transform-origin: left bottom;
+}
+
+.contato-btn {
+    background: transparent;
+    border: 1px solid #212121;
+    border-radius: 16px;
+    padding: 8px 32px;
+    font: 16px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+}
+
+.contato-btn::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    background-color: #212121;
+    transform: scaleX(0);
+    width: 100%;
+    transform-origin: left top;
+    transition: 0.25s ease-in-out;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contato-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    color: #f8f8ff;
+}
+
+.contato-btn:hover {
+    color: #f8f8ff;
+}
+
+#Hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 62px);
+}
+
+#Hero-section span{
+    font-size: 96px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Satoshi", sans-serif;
+    font-weight: bold;
+}
+
+#span-border {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--light-theme-textcolor);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Sobre-h1 {
+    font-family: "Satoshi", sans-serif;
+    font-weight: bold;
+}
+
+.aboutme-text {
+    font-size: 40px;
+    width: 85%;
+    font-family: "ranade", sans-serif;
+    padding-top: 1rem;
+}
+
+#Projetos-section {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projetos-h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    width: 50%;
+    font-family: "Satoshi", sans-serif;
+}
+
+.projeto-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b5a9a9;
+    height: 860px;
+    border: 2rem solid #212121;
+    font-family: "Satoshi", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+#Habilidades-section {
+    padding: 32px 0;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: row;
+    padding: 24px 0;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    border-top: 1px solid var(--light-theme-textcolor);
+    border-bottom: 1px solid var(--light-theme-textcolor);
+}
+
+.habilidades p {
+    font-family: "Satoshi", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.habilidades-icon {
+    width: 50px;
+
+}
+
+#Contato-section h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    width: 55%;
+    font-family: "Satoshi", sans-serif;
+}
+
+.div-line-btn {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #212121;
+}
+
+.line-2 {
+    background-color: #212121;
+    height: 1px;
+    padding-left: 64px;
+}
+
+.circle-btn {
+    width: 220px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--dark-theme-background);
+    color: var(--dark-theme-textcolor);
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.social-links-div {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    left: 4rem;
+}
+
+.social-link {
+    border: 1px solid;
+    color: var(--light-theme-textcolor);
+    font-family: "Satoshi", sans-serif;
+    font-size: 1.5rem;
+}
+
+footer {
+    padding: 1rem 0;
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.versao-site-footer, .footer-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.versao-title {
+    font-family: "ranade", sans-serif;
+    font-size: 1rem;
+}
+
+.versao-2024 {
+    font-family: "Satoshi", sans-serif;
+    font-size: 20px;
+}
+
+.social-links-footer-title {
+    font-family: "ranade", sans-serif;
+    font-size: 1rem;
+}
+
+.div-socialLinks-footer {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link-footer {
+    font-family: "Satoshi", sans-serif;
+    font-size: 20px;
+    position: relative;
+    color: var(--light-theme-textcolor);
+}
