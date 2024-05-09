@@ -6,42 +6,49 @@
     <title>victor alves</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://api.fontshare.com/v2/css?f[]=panchang@500,700&f[]=satoshi@500,700&f[]=ranade@400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body class="light-theme">
-    <header>
-        <a href="index.html" class="title">victor alves</a>
-        
-        <nav>
-            <a href="#Sobre-section" class="header-links bottom-hover-effect">Sobre</a>
-            <a href="#Projetos-section" class="header-links bottom-hover-effect">Projetos</a>
-            <a href="#Habilidades-section" class="header-links bottom-hover-effect">Habilidades</a>
-            <a href="#Contato-section" class="header-links bottom-hover-effect">Contato</a>
+   <header>
+        <h1>Victor alves</h1>
+
+        <nav class="header-nav">
+            <a href="">Sobre</a>
+            <a href="">Projetos</a>
+            <a href="#habilidades-section">Habilidades</a>
+            <a href="#contato-section">Contato</a>
         </nav>
 
-        <button class="contato-btn">Contato</button>
+        <a href="#contato-section" class="contato-btn-header">Contato</a>
     </header>
 
     <main>
-        <section id="Hero-section">
-            <span>Oi, Meu nome é victor</span>
-            <span id="span-border">Oi, meu nome é victor</span>
-            <span>Oi, Meu nome é victor</span>
-        </section>
-
-        <section id="Sobre-section">
-            <h1 class="Sobre-h1">Sobre mim</h1>
-            <p class="aboutme-text">Meu nome é victor alves, sou um jovem de 20 anos, que se interessou por programação e design front-end e começou a estudar a pouco menos de um ano, Sempre focando em fazer designs responsivos e acessesiveis a todo tipo de publico, e codigos semanticos. Eu atualmente vivo no rio de janeiro, E estou estudando React-js, node-js e next-js.</p>
-        </section>
-
-        <section id="Projetos-section">
-            <h1 class="projetos-h1">Meus projetos</h1>
-
-            <div class="projetos">
-                <div class="projeto projeto-1">Coming soon</div>
+        <section class="hero-section">
+            <div class="headline">
+                <span class="span-headline">Oi, meu nome é victor alves</span>
+                <span class="span-headline border-span">Oi, meu nome é victor alves</span>
+                <span class="span-headline">Oi, meu nome é victor alves</span>
             </div>
         </section>
 
-        <section id="Habilidades-section">
+        <section class="aboutme-section">
+            <p class="title-aboutme">Sobre mim</p>
+            <p class="aboutme-text">Sou um jovem de 20 anos, que se interessou por programação e design front-end e começou a estudar a pouco menos de um ano, Sempre focando em fazer designs responsivos e acessesiveis a todo tipo de publico, e codigos semanticos. Eu atualmente vivo no rio de janeiro, E estou estudando React-js, node-js e next-js.</p>
+            
+            <div class="contato-btn-div">
+                <a href="#contato-section" class="circle-btn link-to-contato">Contato</a>
+            </div>
+        </section>
+
+        <section class="projetos-section">
+            <h1>Meus trabalhos</h1>
+
+            <div class="projeto-div">Coming soon</div>
+        </section>
+
+        <section id="habilidades-section">
+            <h1>Habilidades</h1>
+
             <div class="habilidades">
                 <img src="Images/HTML5-icon.svg" alt="" class="habilidades-icon">
                 <p>html</p>
@@ -78,38 +85,44 @@
             </div>
         </section>
 
-        <section id="Contato-section">
-            <h1 class="contato-h1">Tem um projeto em mente?, entre em contato comigo</h1>
+        <section id="contato-section">
+            <h1>tem um projeto em mente?, entre em contato comigo</h1>
 
-            <div class="div-line-btn">
-                <div class="line"></div>
-                <button class="circle-btn">Me contate</button>
-                <div class="line-2"></div>
-            </div>
+            <form action="get" class="contato-form">
+                <div class="form-inputs-div">
+                    <label for="">Nome</label>
+                    <input type="text" name="Nome" id="" placeholder="Nome" required class="form-input">
+                </div>
+                
+                <div class="form-inputs-div">
+                    <label for="">Email</label>
+                    <input type="email" name="Nome" id="" placeholder="Nome" required class="form-input">
+                </div>
 
-            <div class="divBtn-contato">
+                <div class="form-inputs-div">
+                    <label for="">Telefone</label>
+                    <input type="number" name="Nome" id="" placeholder="Nome" required class="form-input">
+                </div>
+
+                <button class="circle-btn">Enviar</button>
+            </form>
+
+            <div class="version-and-social-links-div">
+                <div class="versao-site-div">
+                    <p class="versao-title">Versão</p>
+                    <p class="versao-2024">2024 by victor alves</p>
+                </div>
+        
                 <div class="social-links-div">
-                    <a href="" class="social-link contato-btn">Linkedin</a>
-                    <a href="" class="social-link contato-btn">Github</a>
+                    <p class="social-links-title">Social media</p>
+                    
+                    <div class="div-social-links-a">
+                        <a href="" class="social-link-footer bottom-hover-effect">Linkedin</a>
+                        <a href="" class="social-link-footer bottom-hover-effect">Github</a>
+                    </div>            
                 </div>
             </div>
         </section>
     </main>
-
-    <footer>
-        <div class="versao-site-footer">
-            <p class="versao-title">Versão</p>
-            <p class="versao-2024">2024 by victor alves</p>
-        </div>
-
-        <div class="footer-social-links">
-            <p class="social-links-footer-title">Social media</p>
-            
-            <div class="div-socialLinks-footer">
-                <a href="" class="social-link-footer bottom-hover-effect">Linkedin</a>
-                <a href="" class="social-link-footer bottom-hover-effect">Github</a>
-            </div>            
-        </div>
-    </footer>
 </body>
 </html>
