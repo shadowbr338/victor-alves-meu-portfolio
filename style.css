@@ -20,6 +20,8 @@
 
 a {
     text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
 }
 
 h1 {
@@ -44,6 +46,24 @@ h1 {
     font-family: "ranade", sans-serif;
 }
 
+.border-hover-effect::before {
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left bottom;
+    transition: 0.25s ease-in-out;
+    position: absolute;
+    height: 1px;
+    background-color: #212121;
+}
+
+.border-hover-effect:hover::before {
+    transform: scaleX(1);
+    transform-origin: left bottom;
+}
+
 body {
     margin: 0 32px;
 }
@@ -57,7 +77,7 @@ header {
 
 .header-nav {
     display: none;
-    font-family: "ranade, sans-serif;
+    font-family: "ranade, sans-serif";
 }
 
 .header-nav a {
@@ -145,6 +165,10 @@ main {
     padding: 8px 0;
 }
 
+.tailwind-skill {
+    height: 67.6px;
+}
+
 .habilidades p {
     font-family: "ranade", sans-serif;
     font-size: 1rem;
@@ -161,17 +185,39 @@ main {
     padding-bottom: 16px;
 }
 
+.form-section {
+    display: flex;
+    
+}
+
+.form-texto {
+    width: 50%;
+}
+
+.form-texto h1 {
+    font-family: "Satoshi", sans-serif;
+    font-size: 48px;
+    text-transform: none;
+}
+
+.form-texto p {
+    font-family: "ranade", sans-serif;
+    font-size: 24px;
+}
+
 .contato-form {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    width: 50%;
 }
 
 .form-inputs-div {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    width: 300px;
 }
 
 .form-inputs-div label {
@@ -183,6 +229,7 @@ main {
     border: none;
     border-bottom: 1px solid var(--dark-theme-background);
     outline: none;
+    width: 100%;
 }
 
 .version-and-social-links-div {

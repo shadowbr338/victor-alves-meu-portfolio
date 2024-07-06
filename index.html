@@ -13,10 +13,10 @@
         <h1>Victor alves</h1>
 
         <nav class="header-nav">
-            <a href="">Sobre</a>
-            <a href="">Projetos</a>
-            <a href="#habilidades-section">Habilidades</a>
-            <a href="#contato-section">Contato</a>
+            <a class="border-hover-effect" href="">Sobre</a>
+            <a class="border-hover-effect" href="">Projetos</a>
+            <a class="border-hover-effect" href="#habilidades-section">Habilidades</a>
+            <a class="border-hover-effect" href="#contato-section">Contato</a>
         </nav>
 
         <a href="#contato-section" class="contato-btn-header">Contato</a>
@@ -74,7 +74,7 @@
                 <p>Next-js</p>
             </div>
 
-            <div class="habilidades">
+            <div class="habilidades tailwind-skill">
                 <img src="Images/TailwindCss-icon.svg" alt="" class="habilidades-icon">
                 <p>Tailwind-css</p>
             </div>
@@ -86,26 +86,37 @@
         </section>
 
         <section id="contato-section">
-            <h1>tem um projeto em mente?, entre em contato comigo</h1>
+            <div class="form-section">
+                <div class="form-texto">
+                    <h1>Tem um projeto em mente?, Entre em contato comigo</h1>
+                    <p>Me mande um email para a gente trocar uma idea</p>
+                </div> 
 
-            <form action="get" class="contato-form">
-                <div class="form-inputs-div">
-                    <label for="">Nome</label>
-                    <input type="text" name="Nome" id="" placeholder="Nome" required class="form-input">
-                </div>
-                
-                <div class="form-inputs-div">
-                    <label for="">Email</label>
-                    <input type="email" name="Nome" id="" placeholder="Nome" required class="form-input">
-                </div>
+                <form action="https://api.web3forms.com/submit" method="post" class="contato-form">
+                    <input type="hidden" name="access_key" value="c832e34d-3e95-4713-b99d-99e1c95e406c">
 
-                <div class="form-inputs-div">
-                    <label for="">Telefone</label>
-                    <input type="number" name="Nome" id="" placeholder="Nome" required class="form-input">
-                </div>
+                    <div class="form-inputs-div">
+                        <label for="">Nome</label>
+                        <input type="text" name="Nome" id="" placeholder="Escreva seu nome aqui" required class="form-input" maxlength="50">
+                    </div>
+                    
+                    <div class="form-inputs-div">
+                        <label for="">Email</label>
+                        <input type="email" name="Nome" id="" placeholder="Escreva seu email aqui" required class="form-input">
+                    </div>
 
-                <button class="circle-btn">Enviar</button>
-            </form>
+                    <div class="form-inputs-div">
+                        <label for="">Assunto</label>
+                        <input type="text" name="Nome" id="" placeholder="Qual é o assunto?" class="form-input" maxlength="50">
+                    </div>
+
+                    <div class="form-inputs-div">
+                        <textarea name="Mensagem" id="" cols="30" rows="10" maxlength="300"></textarea>
+                    </div>
+
+                    <button type="submit" class="circle-btn">Enviar</button>
+                </form>
+            </div>
 
             <div class="version-and-social-links-div">
                 <div class="versao-site-div">
@@ -117,12 +128,14 @@
                     <p class="social-links-title">Social media</p>
                     
                     <div class="div-social-links-a">
-                        <a href="" class="social-link-footer bottom-hover-effect">Linkedin</a>
-                        <a href="" class="social-link-footer bottom-hover-effect">Github</a>
+                        <a href="" class="social-link-footer bottom-hover-effect border-hover-effect">Linkedin</a>
+                        <a href="" class="social-link-footer bottom-hover-effect border-hover-effect">Github</a>
                     </div>            
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
